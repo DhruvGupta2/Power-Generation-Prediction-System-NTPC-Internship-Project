@@ -9,8 +9,7 @@ This project was developed during my internship at NTPC (National Thermal Power 
 - **🧠 Goal**: Predict and optimize power generation (GG4_MW) using real-time plant sensor data.
 - **📊 Data**: 108 operational features (temperatures, pressures, flow rates, etc.)
 - **⚙️ Model**: Random Forest Regressor (R² = 0.997)
-- **🧪 Optimization**: Bayesian Optimization to suggest ideal input setpoints
-- **📈 Evaluation**: RMSE, MAE, MAPE, cross-validation
+- **📈 Evaluation**: RMSE, MAE, MAPE
 
 ---
 
@@ -29,24 +28,15 @@ This project was developed during my internship at NTPC (National Thermal Power 
 
 - Used **RandomForestRegressor** to predict GG4_MW from input variables
 - Achieved **R² Score: 0.997**, **RMSE: 1.51**
-- Evaluated using **cross-validation** with R² and RMSE
-
----
-
-## 🧠 Optimization Logic
-
-- Implemented **Bayesian Optimization** to find optimal input setpoints
-- Goal: **Maximize GG4_MW** or **Minimize Heat Rate**
-- Predicted best configuration using trained model
 
 ---
 
 ## 📁 Repository Structure
 
 ```
-├── notebook.ipynb          # Jupyter Notebook with full pipeline
-├── README.md               # Project summary and details
-├── requirements.txt        # Python dependencies (optional)
+├── Power Generation Prediction.ipynb          # Jupyter Notebook with full pipeline
+├── README.md                                  # Project summary and details
+
 ```
 
 ---
@@ -61,13 +51,8 @@ This project was developed during my internship at NTPC (National Thermal Power 
 
 ## 🧰 Technologies Used
 
-- Python (Pandas, NumPy, Scikit-learn)
+- Python (Pandas, Scikit-learn)
 - Matplotlib, Seaborn
-- Bayesian Optimization (bayes_opt library)
 - Jupyter Notebook
 
 ---
-
-## 📜 License
-
-This project is for educational/research use only.
